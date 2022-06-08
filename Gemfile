@@ -7,3 +7,4 @@ gem 'rubocop'
 
 # Specify your gem's dependencies in fluent-plugin-add.gemspec
 gemspec
+gem 'kubeclient', git: 'https://github.com/ManageIQ/kubeclient.git', ref: '831e360'
