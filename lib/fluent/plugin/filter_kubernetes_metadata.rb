@@ -255,8 +255,7 @@ module Fluent::Plugin
         auth_options = {}
 
         if present?(@bearer_token_file)
-          bearer_token = File.read(@bearer_token_file)
-          auth_options[:bearer_token] = bearer_token
+          auth_options[:@bearer_token_file] = @bearer_token_file
         end
 
         log.debug 'Creating K8S client'
